@@ -1,0 +1,77 @@
+a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: color 2s;
+}
+
+a:hover {
+    color: black;
+}
+
+nav{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+nav > ul {
+    display: block;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    background-color: black;
+    list-style-type: none;
+    border: white solid 1px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+ul.submeniu li{
+    background-color: black;
+    height: 50px;
+}
+
+ul.submeniu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-2em);
+    transition: all 0.3s;
+}
+
+ul.meniu > li:hover ul.submeniu {
+    display: block;
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+ul.submeniu li{
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+ul.submeniu li:hover {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+}
+
+ul.meniu li{
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+ul.meniu li:hover {
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+}
