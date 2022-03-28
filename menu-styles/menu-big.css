@@ -1,3 +1,11 @@
+#burger-menu{
+    display: none;
+}
+
+#burger-check{
+    display: none;
+}
+
 a {
     text-decoration: none;
     display: block;
@@ -63,4 +71,8 @@ nav li:hover {
     background-color: white;
     color: black;
     border: black solid 1px;
+}
+
+header{
+    display: none;
 }

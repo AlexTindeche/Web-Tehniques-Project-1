@@ -29,7 +29,7 @@ section > div:nth-of-type(2) {
 }
 
 
-img{
+footer > img{
     position: absolute;
     bottom: 10px;
     padding-left: calc(50vw - 8vh);
