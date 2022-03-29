@@ -1,4 +1,16 @@
 body{
-    margin: 0;
-    padding-right: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-family: 'Spectral SC', serif;
+}
+
+body article{
+    padding-right: 17vw;
+    padding-left: 17vw;
+}
+
+article:nth-of-type(1){
+    margin-right: 30vw;
 }
