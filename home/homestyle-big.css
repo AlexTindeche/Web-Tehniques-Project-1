@@ -1,7 +1,7 @@
-html{
+html {
     height: 100vh;
     width: 100vw;
-    background-image: url("home-background.jpg");
+    background-image: url("../images/home-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -9,38 +9,30 @@ html{
     color: white;
 }
 
-.page-container{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    height: 400px;
-}
-
-section > div:nth-of-type(1){
-    font-size: 50px;
-}
-
-section > div:nth-of-type(2){
-    font-size: 24px;
-}
-
-section{
-    position: relative;
+section {
+    position: absolute;
     height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: white solid 1px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
-footer{
-    height: 100%;
+section > div:nth-of-type(1) {
+    font-size: 6vw;
 }
 
+section > div:nth-of-type(2) {
+    font-size: 2vw;
+}
+
+
 footer > img{
+    position: absolute;
+    bottom: 10px;
     padding-left: calc(50vw - 8vh);
     width: 16vh;
 }
 
-
-/*TODO: meniu burger cand este ecran de telefon*/

@@ -3,58 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Brutus about</title>
-    <link href="menu-styles/menu-big.css" type="text/css" rel="stylesheet" media = "screen and (min-width: 800px)">
-    <link href="menu-styles/menu-small.css" type="text/css" rel="stylesheet" media = "screen and (max-width: 800px)">
+    <link href="../menu-styles/menu-big.css" type="text/css" rel="stylesheet" media="screen and (min-width: 800px)">
+    <link href="../menu-styles/menu-small.css" type="text/css" rel="stylesheet" media="screen and (max-width: 800px)">
+    <link href="../about/about-styles.css" type="text/css" rel="stylesheet">
 
     <!--links:-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 </head>
 
-<header>
-    <h1>~BRUTUS BURGER HOUSE~</h1>
-    <h4>Just kill it</h4>
-    <img src = "hamburger-icon-negative.png" id = "burger-menu">
-</header>
+<div id="container-meniu">
+    <header>
+        <h1>~BRUTUS BURGER HOUSE~</h1>
+        <h4>Just kill it</h4>
+        <div id="null"></div>
+    </header>
+
+    <input type="checkbox" id="burger-check">
+    <img src="../images/hamburger-icon-negative.png" id="burger-menu">
+    <img src="../images/burger-closed.jpg" id="burger-closed">
+
+    <nav>
+        <ul class="meniu">
+            <li>
+                <a href="../home/home.html">Home</a>
+            </li>
+            <li>
+                About
+                <ul class="submeniu">
+                    <li><a href="about.html#our-story">Our story</a></li>
+                    <li><a href="about.html#why-do-we-do-this">Why do we do this</a></li>
+                    <li><a href="about.html#local-ingredients">Local ingredients</a></li>
+                </ul>
+            </li>
+            <li>
+                Staff
+            </li>
+            <li>
+                Menu
+                <ul class="submeniu">
+                    <li>Food</li>
+                    <li>Drinks</li>
+                </ul>
+            </li>
+            <li>
+                News
+            </li>
+            <li>
+                Photos
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <body>
-
-<input type="checkbox" id = "burger-check">
-
-<nav>
-    <ul class="meniu">
-        <li>
-            Home
-        </li>
-        <li>
-            About
-            <ul class = "submeniu">
-                <li><a href="about.html#our-story">Our story</a></li>
-                <li><a href="about.html#why-do-we-do-this">Why do we do this</a></li>
-                <li><a href="about.html#local-ingredients">Local ingredients</a></li>
-            </ul>
-        </li>
-        <li>
-            Staff
-        </li>
-        <li>
-            Menu
-            <ul class="submeniu">
-                <li>Food</li>
-                <li>Drinks</li>
-            </ul>
-        </li>
-        <li>
-            News
-        </li>
-        <li>
-            Photos
-        </li>
-        <li>
-            Contact
-        </li>
-    </ul>
-</nav>
-
 <article id="our-story">
     <h1>Our Story</h1>
     <p>
@@ -101,10 +105,10 @@
     <section id="buns">
         <h1>Housemade bread</h1>
         <p>
-            We are extremely proud of our burger buns. Thanks to a homemade 
-            recipe by founder Nicole Hegenski, our guests at Brutus Burger House can enjoy 
-            the perfect buns, fluffy and tasty at the same time. We bake our buns fresh 
-            every day so we can offer the best quality to our customers. Combined with our 
+            We are extremely proud of our burger buns. Thanks to a homemade
+            recipe by founder Nicole Hegenski, our guests at Brutus Burger House can enjoy
+            the perfect buns, fluffy and tasty at the same time. We bake our buns fresh
+            every day so we can offer the best quality to our customers. Combined with our
             regional beef, these two main elements lay the foundation for our burgers.
         </p>
     </section>
