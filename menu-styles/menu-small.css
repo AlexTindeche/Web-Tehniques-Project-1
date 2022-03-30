@@ -32,8 +32,8 @@ header > h2{
 
 #burger-menu{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 9px;
+    left: 9px;
     height: 50px;
     width: 50px;
     margin: 0;
@@ -44,8 +44,8 @@ header > h2{
 #burger-closed{
     visibility: hidden;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 9px;
+    left:9px;
     height: 50px;
     width: 50px;
     margin: 0;
@@ -55,8 +55,8 @@ header > h2{
 
 #burger-check{
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 9px;
+    left: 9px;
     opacity: 0;
     height: 50px;
     width: 50px;
