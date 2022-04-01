@@ -10,7 +10,7 @@
     display: none;
 }
 
-a {
+#container-meniu a{
     text-decoration: none;
     display: block;
     width: 100%;
@@ -19,7 +19,7 @@ a {
     transition: color 2s;
 }
 
-a:hover {
+#container-meniu a:hover {
     color: black;
 }
 
