@@ -5,6 +5,10 @@ body{
     background: linear-gradient(135deg, #14141455 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(225deg, #141414 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(315deg, #14141455 25%, transparent 25%) 0px 0/ 42px 42px, linear-gradient(45deg, #141414 25%, #000000 25%) 0px 0/ 42px 42px;
 }
 
+#staff{
+    text-decoration: underline;
+}
+
 #image-container{
     display: flex;
     flex-direction: row;
@@ -52,7 +56,7 @@ body{
     color: white;
 }
 
-.backisde a:nth-of-type(2){
+.backside a:nth-of-type(2){
     display: none;
 }
 
@@ -80,6 +84,8 @@ h4{
     line-height: 20px;
 }
 
+
+
 @media screen and (max-width: 460px) {
     #image-container img{
         width: 200px;
@@ -103,7 +109,6 @@ h4{
     .backside a:nth-of-type(2){
         display: block;
     }
-
 }
 
 
