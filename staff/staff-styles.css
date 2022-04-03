@@ -1,3 +1,10 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    background: linear-gradient(135deg, #14141455 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(225deg, #141414 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(315deg, #14141455 25%, transparent 25%) 0px 0/ 42px 42px, linear-gradient(45deg, #141414 25%, #000000 25%) 0px 0/ 42px 42px;
+}
+
 #image-container{
     display: flex;
     flex-direction: row;
@@ -10,16 +17,94 @@
     padding-right: 100px;
 }
 
+.flip{
+    perspective: 1000px;
+}
+
 #image-container img{
     width: 370px;
+    height: 370px;
+}
+
+.flip{
+    width: 370px;
+    height: 370px;
+    transform-style: preserve-3d;
+}
+
+.frontside, .backside{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+
+}
+
+.backside{
+    transform: rotateY(180deg);
+    background-color: black;
+    font-size: 30px;
+    line-height: 370px;
+}
+
+.backside a{
+    text-decoration: none;
+    color: white;
+}
+
+.backisde a:nth-of-type(2){
+    display: none;
+}
+
+.flip{
+    transition: all 1s;
+}
+
+.flip:hover{
+    transform: rotateY(180deg);
 }
 
 #image-container div{
-    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
-body h1{
+h1{
     text-align: center;
-    line-height: 100px;
 }
+
+h4{
+    text-decoration: underline;
+}
+
+#gallery h1{
+    line-height: 20px;
+}
+
+@media screen and (max-width: 460px) {
+    #image-container img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .flip{
+        width: 200px;
+        height: 200px;
+    }
+
+    .backside{
+        font-size: 20px;
+        line-height: 200px;
+    }
+
+    .backside a:nth-of-type(1){
+        display: none;
+    }
+
+    .backside a:nth-of-type(2){
+        display: block;
+    }
+
+}
+
+
+/* TODO: poate de adaugat buton pentru facebook?*/
