@@ -5,13 +5,101 @@ body{
     background: linear-gradient(135deg, #14141455 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(225deg, #141414 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(315deg, #14141455 25%, transparent 25%) 0px 0/ 42px 42px, linear-gradient(45deg, #141414 25%, #000000 25%) 0px 0/ 42px 42px;
 }
 
-.item{
-    display: grid;
-    grid-template-areas:
-            "name mass price name mass price"
-            "descriprion . . description . .";
+#burgers, #drinks{
+    text-align: center;
+    font-size: 50px;
 }
 
-.item h1::before{
-    content: "->";
+#drinks{
+    margin-top: 200px;
+}
+
+#food-container{
+    display: grid;
+    grid-template-areas:
+        "col1 col2"
+        "col1 col2"
+        "col1 col2"
+        "col1 col2"
+        "col1 col2"
+        "col1 col2"
+        "col1 col2";
+    gap: 100px;
+}
+
+#drinks-container{
+    display: grid;
+    grid-template-areas:
+        "col1 col2 col3"
+        "col1 col2 col3"
+        "col1 col2 col3"
+        "col1 col2 col3"
+        "col1 col2 col3"
+        "col1 col2 col3"
+        "col1 col2 col3";
+    gap: 30px;
+}
+
+.col1{
+    grid-area: col1;
+}
+
+.col2{
+    grid-area: col2;
+}
+
+.col3{
+    grid-area: col3;
+}
+
+#food-container .item{
+    display: grid;
+    grid-template-areas:
+    "name price"
+    "description price"
+    "mass price";
+}
+
+#drinks-container .item{
+    display: grid;
+    grid-template-areas:
+    "name price"
+    "description price";
+}
+
+.name{
+    grid-area: name;
+}
+
+.description{
+    grid-area: description;
+}
+
+.mass{
+    grid-area: mass;
+}
+
+.price{
+    grid-area: price;
+    text-align: right;
+}
+
+.price::after{
+    content: 'RON';
+}
+
+#food:first-line{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 750px) {
+    #food-container, #drinks-container{
+        display: block;
+    }
+
+    .col1, .col2, .col3{
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
 }

@@ -80,3 +80,7 @@ nav li:hover {
 header{
     display: none;
 }
+
+#brutus img{
+    width: 2vw;
+}
