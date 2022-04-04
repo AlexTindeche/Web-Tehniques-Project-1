@@ -1,0 +1,17 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    background: linear-gradient(135deg, #14141455 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(225deg, #141414 25%, transparent 25%) -21px 0/ 42px 42px, linear-gradient(315deg, #14141455 25%, transparent 25%) 0px 0/ 42px 42px, linear-gradient(45deg, #141414 25%, #000000 25%) 0px 0/ 42px 42px;
+}
+
+.item{
+    display: grid;
+    grid-template-areas:
+            "name mass price name mass price"
+            "descriprion . . description . .";
+}
+
+.item h1::before{
+    content: "->";
+}
