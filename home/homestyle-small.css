@@ -49,3 +49,7 @@ footer > img{
     padding-left: calc(50vw - 8vh);
     width: 16vh;
 }
+
+#knife{
+    display: none
+}
